@@ -1,0 +1,271 @@
+/* Google font link file */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:wght@500&display=swap');
+
+/* font family  start */
+
+          /* tittle =   font-family: 'Bad Script', cursive;
+
+         all =   font-family: 'Open Sans', sans-serif; */
+
+
+/* font family  end */
+
+/* common css start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.containar {
+    max-width: 85%;
+    margin: auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+    transition: .45s linear;
+}
+.dotted-line {
+    border-bottom: 10px dotted rgb(10, 10, 10);
+    max-width: 15%;
+    margin: 10px auto;
+}
+
+/* common css end */
+
+
+/* header css start */
+
+header {
+    background: #1abc9c;
+    padding: 5px 0 ;
+}
+.header-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.logo {
+    grid-column: 1 / 3;
+}
+nav {
+    grid-column: 3 / -1;
+    align-self: center;
+}
+.logo .img {
+	width: 120px;
+	height: 102px;
+    
+}
+.logo .img img {
+    margin-top: -8%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+  
+}
+nav ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bolder;
+    font-size: 20px;
+    display: block;
+    transition: color .5s ease-in-out;
+}
+nav ul li a:hover {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+}
+
+
+
+
+/* header css end */
+
+
+/* main css start */
+.banner {
+    padding: 20px 0;
+    height: 87vh;
+    background: linear-gradient(to top right, #20509957,#17af515e),url(img/food-banner.jpg) no-repeat center / cover;
+    color: #ecf0f1;
+    display: grid;
+    grid-template-columns: 55%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.banner h1 {
+    font-family: 'Bad Script', cursive;
+    background: rgba(241, 196, 15, 0.753);
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.banner p {
+    background: green;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.banner button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 25px;
+    border: none;
+    background: green;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: .50s linear;
+}
+
+.banner button:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 6px 2px rgb(231, 224, 224);
+}
+
+/* about us css start */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+#about p {
+    text-align: justify;
+    margin: 16px 0;
+}
+
+/* about us css end */
+
+/* food menu css start */
+#food {
+    padding: 80px 0px;
+    background: #95a5a6;
+}
+
+.food-menu-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 40px;
+}
+.card {
+    grid-column: span 3;
+    overflow: hidden;
+    background: #2c3e50;
+    border-radius: 10px;
+    color: whitesmoke;
+    transition: .50s linear;
+}
+.card-img {
+	height: 200px;
+	overflow: hidden;
+}
+.card-img img:hover {
+    transform: scale(1.3);
+}
+.card-body {
+    padding: 20px;
+}
+.card-body h4 {
+    text-align: center;
+    margin: 10px 0 20px;
+    background: #7f8c8d;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-body p {
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+}
+.card-body p i {
+    margin-left: 5px;
+    color: red;
+}
+.card-body p span i {
+    margin-left: 5px;
+    color: goldenrod;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* food menu css end */
+
+/* contact css start */
+#contact {
+    background: #34495e;
+    padding: 40px 0;
+}
+.contact-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.map {
+    grid-column: 1 / 8;
+}
+.map .lacation {
+    width:100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.contact-details {
+    grid-column: 8 / -1;
+    padding: 0 30px;
+    text-align: center;
+    color: rgb(231, 224, 224);
+    line-height: 27px;
+}
+.contact-details .dotted-line {
+    border-color: rgb(231, 224, 224);
+}
+.contact-details p {
+    margin-top: 10px;
+}
+
+
+/* contact css end */
+
+
+/* main css end */
+
+
+
+
+/* footer css start */
+footer {
+    background:#2c3e50 ;
+    padding: 20px;
+    color: rgb(231, 224, 224);
+}
+.footer-row {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.copyright {
+    grid-column: 1 / 6;
+    font-size: 12px;
+    align-self: center;
+}
+.icon {
+    grid-column: 6 / -1;
+    justify-self: end;
+}
+.icon i {
+    margin-right: 10px;
+    font-size: 20px;
+    border: 1px solid bisque;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* footer css end */
+

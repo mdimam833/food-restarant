@@ -1,0 +1,151 @@
+/* responsive design css  */
+
+
+/* screen width - 992px device  */
+@media screen and (max-width: 992px) {
+
+    /* main css start */
+
+    /* food menu css start */
+    .food-menu-row {
+        grid-row-gap: 50px;
+    }
+    .card {
+        grid-column: span 6;
+    }
+    /* food menu css end */
+    
+    /* main css end */
+    
+}
+
+
+/* screen width - 768px device  */
+@media screen and (max-width: 768px) {
+
+      /* header css start */
+    .containar {
+        max-width: 95%;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    /* header css end */
+
+    /* banner css start */
+    .banner {
+        height: 65vh;
+    }
+
+    /* banner css end */
+
+    /* about css start */
+    #about p {
+        padding: 20px;
+    }
+
+    /* about css end */
+
+    /* contact css start */
+    .map {
+        grid-column: 1 / -1;
+        padding: 0 20px;
+    }
+    .contact-details {
+        grid-column: 1 / -1;
+        margin-top: 40px;
+    }
+
+    /* contact css end */
+    
+}
+
+/* screen width - 600px device  */
+@media screen and (max-width: 600px) {
+
+      /* header css start */
+      .logo {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    nav {
+        grid-column: 1 / -1;
+    }
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+        background: #2c3e50;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    nav ul li a:hover {
+        color: wheat;
+        border-bottom: none;
+    }
+    /* header css end */
+
+     /* banner css start */
+     .banner {
+        grid-template-columns: 100%;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+    .banner button {
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* banner css end */
+
+     /* about css start */
+     #about p {
+        padding: 30px;
+    }
+
+    /* about css end */
+
+     /* food menu css start */
+     .food-menu-row {
+        grid-column-gap:  0px;
+        padding: 0 25px;
+     }
+    .card {
+        grid-column: span 12;
+    }
+    /* food menu css end */
+
+    /* footer css start */
+    .copyright {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-top: 30px;
+        order: 1;
+    }
+    .icon {
+        grid-column: 1 / -1;
+        justify-self: center;
+        
+    }
+    .icon i {
+        padding: 5px;
+    }
+    /* footer css end */
+    
+}
+
+/* screen width - 1500px device  */
+@media screen and (min-width: 1500px) {
+
+      /* header css start */
+    
+    /* header css end */
+    
+}
+
+
